@@ -7,3 +7,14 @@ body{
     height: 100px;
     
 }
+header{
+    display: flex;
+    background-color: transparent;
+}
+.navbar a{
+    text-decoration: none;
+    list-style: none ;
+    }
+.navbar{
+    
+}
