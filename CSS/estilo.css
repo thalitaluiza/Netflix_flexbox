@@ -10,11 +10,28 @@ body{
 header{
     display: flex;
     background-color: transparent;
-}
-.navbar a{
+    justify-content: space-between;
+    align-items: center;
+   }
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
     text-decoration: none;
-    list-style: none ;
-    }
-.navbar{
-    
+}
+.a{
+    text-decoration: none;
+}
+
+.lista-filmes{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+
+}
+.card{
+    width: 180px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
 }
