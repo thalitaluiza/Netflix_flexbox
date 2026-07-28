@@ -2,6 +2,9 @@ body{
     background-color: black;
     color: white;
 }
+
+/*Cabeçalho*/
+
 .logo{
     width: auto;
     height: 100px;
@@ -9,9 +12,14 @@ body{
 }
 header{
     display: flex;
-    background-color: transparent;
-    justify-content: space-between;
-    align-items: center;
+    background-color: black;
+    justify-content: space-between; /*Coloca a logo para a esquerda e botão Entrar para a direita*/
+    align-items: center; /*Alinha os itens verticalmente ao centro*/
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%; /*largura*/
+    z-index: 10;
    }
 .navbar ul{
     display: flex;
@@ -19,9 +27,8 @@ header{
     list-style: none;
     text-decoration: none;
 }
-.a{
-    text-decoration: none;
-}
+
+/*Cards de Filmes*/
 
 .lista-filmes{
     display: flex;
@@ -35,3 +42,22 @@ header{
     object-fit: cover;
     border-radius: 5px;
 }
+
+/*Rodapé*/
+
+footer{
+    display: flex;
+    flex-direction: column; /*Alinha na vertical*/
+    padding: 50px;
+}
+.redes-sociais{
+    
+}
+.redes-sociais img{
+    width: 30px;
+    height: 30px;
+}
+.links-footer{
+    justify-content: flex-end;
+}
+
