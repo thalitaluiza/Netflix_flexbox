@@ -1,6 +1,12 @@
+*{
+box-sizing: border-box; /*incorpora margem e padding dentro de uma caixa*/
+}
+
 body{
+    margin: 0;
     background-color: black;
     color: white;
+    overflow-x: hidden; /*faz a barra de rolagem sumir, x é horizontal*/
 }
 
 /*Cabeçalho*/
@@ -27,6 +33,10 @@ header{
     list-style: none;
     text-decoration: none;
 }
+.botao-login{
+    
+
+}
 
 /*Cards de Filmes*/
 
@@ -48,16 +58,42 @@ header{
 footer{
     display: flex;
     flex-direction: column; /*Alinha na vertical*/
+    margin: 80px auto 40px auto; /* Centraliza o bloco do rodapé na tela e afasta dos filmes */
     padding: 50px;
+    align-items: center; /* Alinha a esquerda */
+    gap: 20px;
 }
 .redes-sociais{
-    
+    display: flex; /* Alinha os links na horizontal */
+    gap: 20px;
+       
 }
 .redes-sociais img{
     width: 30px;
     height: 30px;
 }
 .links-footer{
-    justify-content: flex-end;
+    display: flex; /* Alinha os links na horizontal */
+    gap: 20px;
+    width: 100%; /* Ocupa toda a largura disponível do rodapé */
+    flex-wrap: wrap; /* Caso falte espaço, os links quebram linha de forma organizada */
+    justify-content: space-between; /* Distribui as colunas igualmente na horizontal */
 }
 
+.coluna-links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento vertical entre um link e outro */
+    min-width: 150px; /* Garante um tamanho mínimo para não esmagar o texto */
+}
+
+.copyright {
+    color: #808080;
+    font-size: 0.7rem;
+    margin-top: 15px;
+}
+
+/*Teste de Imagem*/
+.teste{
+    
+}
