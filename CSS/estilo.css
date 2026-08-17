@@ -94,15 +94,25 @@ footer{
 }
 
 /*Teste de Imagem*/
-.testeconteiner{
-    display: flex;
-    justify-content:start;
-    padding: 40px 4%;
-
-}
 .lista-teste{
-    width: 100%;
-    border-radius: 4px;
+    display: flex;
+    padding: 20px 0;
+}
+.teste{
+    width: 200px; 
+    background-color: #181818;  
+    border-radius: 8px;  
     overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+.teste img{
+    width: 100%; /* Ocupa toda a largura da div*/
+    height: 280px; /* Altura horizontal*/
+    object-fit: cover; /* Mantém a foto perfeita sem distorção */
+    display: block;
+}
+.teste h4 {
+    padding: 12px 5px;
     text-align: center;
+    font-weight: normal;
 }
