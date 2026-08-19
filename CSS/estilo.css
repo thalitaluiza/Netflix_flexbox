@@ -42,15 +42,31 @@ header{
 
 .lista-filmes{
     display: flex;
-    gap: 20px;
-    overflow-x: auto;
+    padding: 20px 0;
+    justify-content: space-around;
+
 
 }
 .card{
-    width: 180px;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 5px;
+    width: 200px; 
+    background-color: #181818;  
+    border-radius: 8px;  
+    overflow: hidden; /*Rira a barra de rolagem*/
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img{
+    width: 100%; /* Ocupa toda a largura da div*/
+    height: 280px; /* Altura horizontal*/
+    object-fit: cover; /* Mantém a foto perfeita sem distorção */
+    display: block;
+    
+}
+.card h4 {
+    padding: 12px 5px;
+    text-align: center;
+    font-weight: normal;
 }
 
 /*Rodapé*/
@@ -93,26 +109,3 @@ footer{
     margin-top: 15px;
 }
 
-/*Teste de Imagem*/
-.lista-teste{
-    display: flex;
-    padding: 20px 0;
-}
-.teste{
-    width: 200px; 
-    background-color: #181818;  
-    border-radius: 8px;  
-    overflow: hidden;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-}
-.teste img{
-    width: 100%; /* Ocupa toda a largura da div*/
-    height: 280px; /* Altura horizontal*/
-    object-fit: cover; /* Mantém a foto perfeita sem distorção */
-    display: block;
-}
-.teste h4 {
-    padding: 12px 5px;
-    text-align: center;
-    font-weight: normal;
-}
