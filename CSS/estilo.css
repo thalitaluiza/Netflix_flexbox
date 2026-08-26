@@ -58,6 +58,15 @@ header{
    opacity: 0.6;
 
 }
+.banner-conteudo{
+    position: relative;
+    z-index: 2; /* Faz o texto ficar na frente da imagem */
+    max-width: 600px; /* Limita a largura para o texto não espalhar pela tela toda */
+    display: flex;
+    flex-direction: column; /* Organiza o título, dados, descrição e botões um embaixo do outro */
+    gap: 15px;/* Dá um espaçamento padrão entre os blocos de texto */
+
+}
 
 /*Cards de Filmes*/
 
