@@ -67,6 +67,41 @@ header{
     gap: 15px;/* Dá um espaçamento padrão entre os blocos de texto */
 
 }
+.serie1 {
+    font-size: 3.5rem; /* Letra grande para o título principal */
+    font-weight: bold;
+    color: #fff;
+}
+.dados-st {
+    display: flex; /* Coloca as informações lado a lado */
+    align-items: center;
+    gap: 15px; /* Espaço entre cada informação */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.descricao{
+font-size: 1.2rem;
+}
+
+.botoes {
+    display: flex;/* Deixa os botões lado a lado */
+    gap: 15px;/* Espaço entre os botões */
+    margin-top: 10px;
+}
+.botoes button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold; /*fonte em negreito*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.botoes button:hover{
+    background-color: #adabab;
+}
 
 /*Cards de Filmes*/
 
