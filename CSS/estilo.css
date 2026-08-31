@@ -7,13 +7,14 @@ body{
     background-color: black;
     color: white;
     overflow-x: hidden; /*faz a barra de rolagem sumir, x é horizontal*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Cabeçalho*/
 
 .logo{
     width: auto;
-    height: 100px;
+    height: 60px;
     
 }
 header{
@@ -21,9 +22,10 @@ header{
     background-color: black;
     justify-content: space-between; /*Coloca a logo para a esquerda e botão Entrar para a direita*/
     align-items: center; /*Alinha os itens verticalmente ao centro*/
-    padding: 20px 50px;
+    padding: 10px 50px;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%; /*largura*/
     z-index: 10;
    }
@@ -32,9 +34,24 @@ header{
     gap: 30px;
     list-style: none;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar a:hover {
+    background-color: #808080;
+    border-radius: 15px;
+    padding: 8px 10px ;
+    cursor: pointer;
 }
 .botao-login{
-    
+    background-color: #e50914;
+    border: none;
+    padding: 7px 17px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -47,6 +64,7 @@ header{
    align-items: center; /* Alinha o conteúdo verticalmente no centro */
    overflow: hidden;
    background-color: #000;
+   margin-top: 65px;
 }
 
 .banner-principal-img{
@@ -77,11 +95,11 @@ header{
     align-items: center;
     gap: 15px; /* Espaço entre cada informação */
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .descricao{
-font-size: 1.2rem;
+font-size: 1.0rem;
 }
 
 .botoes {
@@ -91,7 +109,7 @@ font-size: 1.2rem;
 }
 .botoes button {
     padding: 12px 25px;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: bold; /*fonte em negreito*/
     border: none;
     border-radius: 4px;
