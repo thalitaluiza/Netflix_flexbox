@@ -14,13 +14,18 @@ body{
 
 .logo{
     width: auto;
-    height: 60px;
+    height: 30px;
     
+}
+.header-lado-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Dá um espaço de 30px entre o logotipo e o início do menu */
 }
 header{
     display: flex;
     background-color: black;
-    justify-content: space-between; /*Coloca a logo para a esquerda e botão Entrar para a direita*/
+    justify-content: space-between;
     align-items: center; /*Alinha os itens verticalmente ao centro*/
     padding: 10px 50px;
     position: fixed;
@@ -29,6 +34,7 @@ header{
     width: 100%; /*largura*/
     z-index: 10;
    }
+   
 .navbar ul{
     display: flex;
     gap: 30px;
@@ -44,16 +50,17 @@ header{
     padding: 8px 10px ;
     cursor: pointer;
 }
-.botao-login{
-    background-color: #e50914;
-    border: none;
-    padding: 7px 17px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-
+/*Botões da Nav*/
+.botoes-header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
+.botoes-header img{
+    width: 30px;
+    height: 30px;
+}
+
 
 /*Banner*/
 .banner-principal {
