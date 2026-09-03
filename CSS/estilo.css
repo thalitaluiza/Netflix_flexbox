@@ -90,6 +90,7 @@ header{
     display: flex;
     flex-direction: column; /* Organiza o título, dados, descrição e botões um embaixo do outro */
     gap: 15px;/* Dá um espaçamento padrão entre os blocos de texto */
+    margin: 30px;
 
 }
 .serie1 {
@@ -135,8 +136,23 @@ font-size: 1.0rem;
     padding: 20px 0;
     justify-content: space-between; /* deve ser usado no "Pai", coloca o mesmo espaçamento em cada um dos cards*/
 
-
 }
+.em-alta h3{
+    margin: 30px;
+}
+
+.acao h3{
+    margin: 30px;
+}
+
+.comedia h3{
+    margin: 30px;
+}
+
+.terror h3{
+    margin: 30px;
+}
+
 .card{
     flex: 1; /*abreviação para flex-grow:1, flex-shrink:1, flex-basis:0%*/
     background-color: #181818;  
@@ -165,22 +181,25 @@ footer{
     flex-direction: column; /*Alinha na vertical*/
     margin: 80px auto 40px auto; /* Centraliza o bloco do rodapé na tela e afasta dos filmes */
     padding: 50px;
-    align-items: center; /* Alinha a esquerda */
+    align-items: center; /* Alinha ao centro */
     gap: 20px;
 }
 .redes-sociais{
     display: flex; /* Alinha os links na horizontal */
     gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
        
 }
 .redes-sociais img{
     width: 30px;
     height: 30px;
+    
 }
 
 .links-footer{
     display: flex; /* Alinha os links na horizontal */
-    gap: 20px;
+    gap: 35px;
     width: 100%; /* Ocupa toda a largura disponível do rodapé */
     flex-wrap: wrap; /* Caso falte espaço, os links quebram linha de forma organizada */
     justify-content: space-between; /* Distribui as colunas igualmente na horizontal */
