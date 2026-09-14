@@ -208,9 +208,15 @@ font-size: 1.0rem;
 
 }
 .card-carrossel{
+    width: 400px;
+    height: 550px;
     background-color: #181818;
     border-radius: 8px;  
-    flex: 1; /*abreviação para flex-grow:1, flex-shrink:1, flex-basis:0%*/
+    cursor: pointer;
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite; /*depois de criar o kayframes precisa associar nessa tag*/
+    animation-delay: var(--delay) ; /*pras imagens não inciarem a animação todas juntas*/
 
 }
 .card-carrossel img {
@@ -220,6 +226,17 @@ font-size: 1.0rem;
 }
 .card-carrossel h4{
     text-align: center;
+}
+
+/*Animação*/
+@keyframes autoRun /*o keyframe basicamente é eu onformar qual a posição inicial e fnal do meu item, e em quanto tempo ele leva de um ponto a outro*/{
+    from{
+        left: 100%;
+    }
+    to{
+        left: -50px;
+    }
+
 }
 
 /*Rodapé*/
