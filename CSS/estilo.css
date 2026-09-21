@@ -66,12 +66,15 @@ header{
 .banner-principal {
     margin-top: 50px;
     width: 100%;
-    height: 900px;
-    overflow: hidden;
-    background-color: aqua; /*só pra ver o tamanho do container*/
-   
+    overflow: hidden;  
 }
 
+.principal img{
+    object-fit: cover; /* Mantém a foto sem distorção */
+    width: 100vw; /* VW faz cada banner ocupar exatamente a largura da tela */
+    
+
+}
 .carrossel-banner{
     width: 100%;
     overflow: hidden;
@@ -80,7 +83,16 @@ header{
     display: flex;
     gap: 15px;
     width: max-content;
-    animation: autoRun 20s linear infinite;
+    animation: autoRun1 38s linear infinite;
+}
+
+@keyframes autoRun1 /*o keyframe basicamente é eu onformar qual a posição inicial e final do meu item, e em quanto tempo ele leva de um ponto a outro*/ {
+    from{
+      transform: translateX(0);
+    }
+    to{
+        transform: translateX(-79%);
+    }
 }
 .carrossel-banner .linha-banner:hover {
     animation-play-state: paused;
@@ -101,7 +113,8 @@ header{
     gap: 15px;/* Espaço entre os botões */
     z-index: 1;
     position: absolute;
-    margin-top: -280px;
+    margin-top: -200px;
+    margin-left: 50px;
 }
 .botoes button {
     padding: 12px 25px;
@@ -202,7 +215,7 @@ header{
 }
 
 /*Animação*/
-@keyframes autoRun /*o keyframe basicamente é eu onformar qual a posição inicial e fnal do meu item, e em quanto tempo ele leva de um ponto a outro*/{
+@keyframes autoRun /*o keyframe basicamente é eu onformar qual a posição inicial e final do meu item, e em quanto tempo ele leva de um ponto a outro*/{
     from{
       transform: translateX(0);
     }
